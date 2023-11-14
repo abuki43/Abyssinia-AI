@@ -1,0 +1,115 @@
+header{
+    width: 100%;
+    /* padding: 1rem 4rem ; */
+    padding-top: 2rem;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+header .logo{
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    align-self: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-right: auto;
+    height: 100%;
+    margin-bottom: 0;
+}
+header .navigation{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    justify-self: flex-end;
+    /* padding-right: 2rem; */
+}
+
+header .navigation a{
+    color: rgb(252, 250, 250);
+    background: none;
+    padding: 2px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease-in;
+    transition-property: all 1s linear;
+}
+
+header .navigation a:hover{
+    background: #fff;
+    color: #000;
+}
+header .mob-nav{
+    display: none;
+}
+header .hamburger{
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+header .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 3;
+    background-color: black;
+    height: 100%;
+    opacity: .9;
+    padding: 4rem 1.6rem;
+    transform: translateX(100%);
+    transition: all .4s ease-in;
+}
+header .sidebar.show{
+    transform: translate(0%);
+}
+
+.sidebar .close{
+    color: red;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+header .sidebar .mob-lists{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    color: white;
+}
+.mob-lists a{
+    color: inherit;
+    padding: 10px 17px;
+}
+.mob-lists a:hover{
+    background-color: aquamarine;
+}
+
+@media (max-width: 800px) {
+    header{
+        width: 100%;
+        margin-right: 0;
+        padding-right: 2rem;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .mob-nav{
+        display: flex;
+    }
+    header .hamburger{
+        display: flex;
+    }
+
+}

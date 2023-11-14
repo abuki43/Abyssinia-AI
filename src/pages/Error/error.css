@@ -1,0 +1,21 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.error-container {
+    text-align: center;
+    text-transform: capitalize;
+}
+.error-container .btn {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #16b0ff;
+    border: 2px solid #16b0ff;
+    padding: 0.45rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: .2rem;
+  }
